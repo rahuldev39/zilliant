@@ -16,6 +16,8 @@ label {
 }
 .checkbox-container .checkbox {
     margin-right: 20px;
+    margin-left: 0px;
+    margin-bottom: 15px;
 }
 .checkbox-container > label {
     margin-bottom: 14px;
