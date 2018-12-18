@@ -11,14 +11,19 @@ label {
     font-weight: 700;
     margin-bottom: 10px;
 }
-.checkbox-container {
+.checkbox-container  {
     margin-top: 10px;
 }
-.checkbox-container label{
-
+.checkbox-container .checkbox {
+    margin-right: 20px;
 }
-.checkbox-container input[type=checkbox], input[type=radio] {
-margin-top: 2px
+.checkbox-container > label {
+    margin-bottom: 14px;
+    display: block;
+}
+.checkbox-primary input[type="checkbox"]:checked + label::before, .checkbox-primary input[type="radio"]:checked + label::before {
+    background-color: #34495e;
+    border-color: #34495e;
 }
 button.close {
     height: 30px;
