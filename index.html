@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Zilliant Metis</title>
+    <style >
+      body{
+        background-color:#34495e !important
+      }
+      .modal-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.modal-btn a span {
+margin-right: 6px;
+font-size: 14px;
+}
+    </style>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/custom.css" rel="stylesheet">
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+
+    <div class="modal-btn">
+
+      <a href="#" type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
+
+      <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>  Open Modal
+      </a>
+    </div>
+
+
+    <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <section>
+        <div class="wizard">
+
+
+            <form role="form">
+                <div class="tab-content">
+                    <div class="tab-pane active" role="tabpanel" id="step1">
+                        <div class="step1">
+                          <div class="">
+                            <div class="panel panel-primary">
+                              <div class="panel-heading">
+                                <h3 class="panel-title">Create New Workbook</h3>
+                              </div>
+                              <div class="panel-body">
+                                <div class="form-group">
+                                  <label for="">Workbook Title</label>
+                                  <input type="text" class="form-control" placeholder="Add Workbook Title">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="wizard-controls text-center">
+                          <button type="button" class="btn btn-default">Cancel</button>
+                          <button type="button" class="btn btn-primary next-step">Next</button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="tab-pane" role="tabpanel" id="step2">
+                        <div class="step2">
+                          <div class="">
+                            <div class="panel panel-primary">
+                              <div class="panel-heading">
+                                <h3 class="panel-title">Create New Workbook</h3>
+                              </div>
+                              <div class="panel-body">
+                                <div class="form-group">
+                                  <label for="">Choose Entity</label>
+                                  <select class="form-control" name="">
+                                    <option value="">--Select Value---</option>
+                                    <option value="">Entity Value 1</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="wizard-controls text-center">
+                          <button type="button" class="btn btn-default prev-step">Previous</button>
+                          <button type="button" class="btn btn-primary next-step">Next</button>
+                        </div>
+
+
+                    </div>
+
+                    <div class="tab-pane" role="tabpanel" id="step3">
+
+                      <div class="step3">
+                        <div class="">
+                          <div class="panel panel-primary">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">Create New Workbook</h3>
+                            </div>
+                            <div class="panel-body">
+
+                              <div class="form-group checkbox-container">
+                              <div class="">
+                                  <label>Column Mapping</label>
+                              </div>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" id="inlineCheckbox1" value="option1"> Column Mapping1
+                                </label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" id="inlineCheckbox2" value="option2"> Column Mapping2
+                                </label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" id="inlineCheckbox3" value="option3"> Column Mapping3
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="wizard-controls text-center">
+                        <button type="button" class="btn btn-default prev-step">Previous</button>
+                        <button type="button" class="btn btn-primary btn-info-full next-step">Finish</button>
+                      </div>
+
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </form>
+
+            <div class="wizard-inner">
+                <div class="connecting-line"></div>
+                <ul class="nav nav-tabs" role="tablist">
+
+                    <li role="presentation" class="active">
+                        <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+                            <span class="round-tab">
+
+                            </span>
+                        </a>
+                    </li>
+
+                    <li role="presentation" class="disabled">
+                        <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+                            <span class="round-tab">
+
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="disabled">
+                        <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+                            <span class="round-tab">
+
+                            </span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </section>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+    <script src="./js/wizard.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

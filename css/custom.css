@@ -1,0 +1,331 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.checkbox-container {
+    margin-top: 10px;
+}
+.checkbox-container label{
+
+}
+.checkbox-container input[type=checkbox], input[type=radio] {
+margin-top: 2px
+}
+button.close {
+    height: 30px;
+    width: 30px;
+    background-color: #34495e;
+    opacity: 1;
+    text-shadow: none;
+    border-radius: 50%;
+    position: absolute;
+    right: -5px;
+    top: -7px;
+    color: white;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    outline: none
+}
+button.close:hover{
+  opacity: 1;
+  color: white
+}
+.modal.in .modal-dialog{
+  margin-top: 100px
+}
+.wizard {
+    margin: 20px auto;
+    background: #fff;
+}
+
+.wizard .nav-tabs {
+    position: relative;
+    margin: 40px auto;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0px;
+}
+.wizard .nav-tabs::after, .wizard .nav-tabs::before{
+  display: none
+}
+.wizard > div.wizard-inner {
+position: relative;
+max-width: 68%;
+margin: 0 auto;
+}
+.wizard-controls .btn {
+    min-width: 114px;
+}
+    .connecting-line {
+        height: 2px;
+        background: #e0e0e0;
+        position: absolute;
+        width: 100%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 50%;
+        z-index: 1;
+    }
+
+.wizard .nav-tabs > li.active > a, .wizard .nav-tabs > li.active > a:hover, .wizard .nav-tabs > li.active > a:focus {
+    color: #555555;
+    cursor: default;
+    border: 0;
+    border-bottom-color: transparent;
+}
+
+span.round-tab {
+    width: 20px;
+    height: 20px;
+    line-height: 70px;
+    display: inline-block;
+    border-radius: 100px;
+    background: #fff;
+    border: 5px solid #e0e0e0;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0px 0px 0px 6px white;
+}
+span.round-tab i{
+    color:#555555;
+}
+.wizard li.active span.round-tab {
+    background: #fff;
+    border: 5px solid #34495e;
+}
+.wizard li.active span.round-tab i{
+    color: #5bc0de;
+}
+
+span.round-tab:hover {
+    color: #333;
+    border: 2px solid #333;
+}
+
+.wizard .nav-tabs > li {
+
+}
+
+.wizard li:after {
+    content: " ";
+    position: absolute;
+    left: 46%;
+    opacity: 0;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 5px solid transparent;
+    border-bottom-color: #5bc0de;
+    transition: 0.1s ease-in-out;
+    display: none;
+}
+
+.wizard li.active:after {
+    content: " ";
+    position: absolute;
+    left: 46%;
+    opacity: 1;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 10px solid transparent;
+    border-bottom-color: #5bc0de;
+}
+
+.wizard .nav-tabs > li a {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    padding: 0;
+}
+
+    .wizard .nav-tabs > li a:hover {
+        background: transparent;
+    }
+
+    .wizard .tab-pane {
+        position: relative;
+        padding-top: 0px;
+    }
+.wizard .tab-pane .panel {
+  margin-bottom: 35px
+}
+.wizard h3 {
+    margin-top: 0;
+}
+.step1 .row {
+    margin-bottom:10px;
+}
+.step_21 {
+    border :1px solid #eee;
+    border-radius:5px;
+    padding:10px;
+}
+.step33 {
+    border:1px solid #ccc;
+    border-radius:5px;
+    padding-left:10px;
+    margin-bottom:10px;
+}
+.dropselectsec {
+    width: 68%;
+    padding: 6px 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #333;
+    margin-left: 10px;
+    outline: none;
+    font-weight: normal;
+}
+.dropselectsec1 {
+    width: 74%;
+    padding: 6px 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #333;
+    margin-left: 10px;
+    outline: none;
+    font-weight: normal;
+}
+.mar_ned {
+    margin-bottom:10px;
+}
+.wdth {
+    width:25%;
+}
+.birthdrop {
+    padding: 6px 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #333;
+    margin-left: 10px;
+    width: 16%;
+    outline: 0;
+    font-weight: normal;
+}
+
+
+/* according menu */
+#accordion-container {
+    font-size:13px
+}
+.accordion-header {
+    font-size:13px;
+	background:#ebebeb;
+	margin:5px 0 0;
+	padding:7px 20px;
+	cursor:pointer;
+	color:#fff;
+	font-weight:400;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px
+}
+.unselect_img{
+	width:18px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.active-header {
+	-moz-border-radius:5px 5px 0 0;
+	-webkit-border-radius:5px 5px 0 0;
+	border-radius:5px 5px 0 0;
+	background:#F53B27;
+}
+.active-header:after {
+	content:"\f068";
+	font-family:'FontAwesome';
+	float:right;
+	margin:5px;
+	font-weight:400
+}
+.inactive-header {
+	background:#333;
+}
+.inactive-header:after {
+	content:"\f067";
+	font-family:'FontAwesome';
+	float:right;
+	margin:4px 5px;
+	font-weight:400
+}
+.accordion-content {
+	display:none;
+	padding:20px;
+	background:#fff;
+	border:1px solid #ccc;
+	border-top:0;
+	-moz-border-radius:0 0 5px 5px;
+	-webkit-border-radius:0 0 5px 5px;
+	border-radius:0 0 5px 5px
+}
+.accordion-content a{
+	text-decoration:none;
+	color:#333;
+}
+.accordion-content td{
+	border-bottom:1px solid #dcdcdc;
+}
+
+.panel-primary>.panel-heading {
+    color: #fff;
+    background-color: #34495e;
+    border-color: #34495e;
+}
+.panel-primary {
+    border-color: #6b7e92;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #34495e;
+    border-color: #34495e;
+}
+.btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #2a3c4e;
+    border-color: #34495e;
+}
+@media( max-width : 585px ) {
+
+    .wizard {
+        width: 90%;
+        height: auto !important;
+    }
+
+    span.round-tab {
+        font-size: 16px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .wizard .nav-tabs > li a {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .wizard li.active:after {
+        content: " ";
+        position: absolute;
+        left: 35%;
+    }
+}
