@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Zilliant Metis</title>
+    <style >
+      body{
+
+      }
+      .modal-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.modal-btn a span {
+margin-right: 6px;
+font-size: 14px;
+}
+    </style>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="./fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="./css/build.css" rel="stylesheet">
+    <link href="./css/custom.css" rel="stylesheet">
+    <link href="./css/bootstrap-select.css" rel="stylesheet">
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="table-header">
+      <div class="table-header-innner">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="./images/book-icon.png" alt="workbook">
+              </a>
+            </div>
+            <div class="media-body">
+              <span>Workbook</span>
+              <h4 class="media-heading">Client Data <i class="fa fa-caret-down" aria-hidden="true"></i></h4>
+            </div>
+          </div>
+
+          <div class="table-info-list">
+              <ul class="list-inline">
+                <li>
+                  <span>200 Items</span>
+                </li>
+                <li>
+                  <span>Sorted by Name</span>
+                </li>
+                <li>
+                  <span>Filters By 0 Filters</span>
+                </li>
+                <li>
+                  <span>Last refreshed just now</span>
+                </li>
+              </ul>
+          </div>
+          </div>
+          <div class="col-md-6">
+            <div class="right-controls">
+              <div class="flex-element right-control-top">
+                  <select class="form-control import-dropdown selectpicker" name="">
+                    <option value="">Import</option>
+                  </select>
+                  <button class="btn btn-default manage-column">Manage Columns <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+              </div>
+              <div class="flex-element right-control-bottom">
+                <div class="search-input">
+                  <div class="search-icon">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </div>
+                  <input type="text" class="form-control" placeholder="search this list...">
+                </div>
+
+                <button class="btn btn-default"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+                <button class="btn btn-default"><span class="glyphicon glyphicon-repeat" aria-hidden="true"></span></button>
+                <button class="btn btn-default"><span class="glyphicon glyphicon-filter" aria-hidden="true"></span></button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+    <!-- jQuery Version 1.11.1 -->
+
+    <script src="js/jquery.js"></script>
+    <script src="./js/wizard.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap-select.min.js"></script>
+    <script type="text/javascript">
+      $('.modal-close').click(function() {
+          $('.wizard .tab-content .tab-pane').removeClass('active');
+          $('.wizard .tab-content .tab-pane:first-child').addClass('active');
+          $('.wizard-inner .nav-tabs li').removeClass('active');
+          $('.wizard-inner .nav-tabs li:first-child').addClass('active');
+      });
+    </script>
+
+</body>
+
+</html>

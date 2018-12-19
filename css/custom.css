@@ -336,6 +336,90 @@ span.round-tab:hover {
     background-color: #026ac5;
     border-color: #0070d2;
 }
+.table-header-innner {
+    padding: 13px 25px;
+    background-color: #f3f2f2;
+    margin-top: 14px;
+    border-radius: 4px 4px 0px 0px;
+    border: 1px solid gainsboro;
+    border-bottom: 0px;
+}
+.flex-element{
+  display: flex;
+  justify-content: flex-end;
+}
+.table-header-innner .media {
+    display: flex;
+    align-items: center;
+}
+.table-header-innner .media span {
+    margin-bottom: 6px;
+    display: block;
+}
+.table-header-innner .media h4 {
+    font-weight: 700;
+}
+.table-header-innner .media h4 i {
+    display: inline-block;
+    margin-left: 10px;
+}
+.table-info-list {
+    margin-top: 15px;
+}
+.table-info-list ul li {
+    position: relative;
+    padding-right: 6px;
+}
+.table-info-list ul li::after {
+    content: "";
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    background-color: black;
+    right: -3px;
+    top: 40%;
+    position: absolute;
+}
+.table-info-list ul li:last-child::after
+{
+  display: none;
+}
+.import-dropdown{
+  max-width: 102px
+}
+.right-control-top{
+  margin-bottom: 10px
+}
+.right-control-top .btn {
+    color: #0070d2 !important;
+    margin-left: 10px;
+}
+.manage-column{
+
+}
+.manage-column i {
+    margin-left: 10px;
+    color: #2f2e2e;
+}
+.right-control-bottom .btn{
+  color: #706e6b;
+  margin-left: 8px
+}
+.search-input {
+    position: relative;
+    width: 100%;
+    max-width: 277px;
+}
+.search-input .form-control {
+    padding-left: 35px;
+}
+.search-input .search-icon {
+    position: absolute;
+    font-size: 15px;
+    color: #706e6b;
+    top: 6px;
+    left: 12px;
+}
 @media( max-width : 585px ) {
 
     .wizard {
