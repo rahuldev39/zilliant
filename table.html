@@ -47,9 +47,10 @@ font-size: 14px;
 <body>
 
   <div class="container">
+
     <div class="table-header">
       <div class="table-header-innner">
-        <div class="row">
+        <div class="row flex-row">
           <div class="col-md-6">
             <div class="media">
             <div class="media-left">
@@ -82,12 +83,12 @@ font-size: 14px;
           </div>
           <div class="col-md-6">
             <div class="right-controls">
-              <div class="flex-element right-control-top">
+            <!--  <div class="flex-element right-control-top">
                   <select class="form-control import-dropdown selectpicker" name="">
                     <option value="">Import</option>
                   </select>
                   <button class="btn btn-default manage-column">Manage Columns <i class="fa fa-angle-right" aria-hidden="true"></i></button>
-              </div>
+              </div> -->
               <div class="flex-element right-control-bottom">
                 <div class="search-input">
                   <div class="search-icon">
@@ -95,16 +96,116 @@ font-size: 14px;
                   </div>
                   <input type="text" class="form-control" placeholder="search this list...">
                 </div>
+                <button class="btn btn-default">
+                  <img src="./images/back.png" alt="">
+                </button>
+                  <button class="btn btn-default">
+                    <img src="./images/forword.png" alt="">
+                  </button>
+                <button class="btn btn-default">
+                  <img src="./images/settings.png" alt="">
+                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </button>
 
-                <button class="btn btn-default"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> <i class="fa fa-caret-down" aria-hidden="true"></i></button>
-                <button class="btn btn-default"><span class="glyphicon glyphicon-repeat" aria-hidden="true"></span></button>
-                <button class="btn btn-default"><span class="glyphicon glyphicon-filter" aria-hidden="true"></span></button>
+                <button class="btn btn-default drop-btn collapsed" data-toggle="collapse" href="#sheet-dropdown" aria-expanded="false" aria-controls="sheet-dropdown">
+                  <img src="./images/sheets.png" alt="">
+                </button>
+                <button class="btn btn-default">
+                  <img src="./images/filter.png" alt="">
+                </button>
               </div>
             </div>
 
           </div>
         </div>
       </div>
+      <div class="dropdown-box">
+        <div class="dopdown-view collapse" id="sheet-dropdown">
+          <div class="dropdown-inner">
+            <div class="dropdown-title">
+              <h4>Manage Worksheet</h4>
+              <span>Sheet1 <img src="./images/pen.png" alt=""> </span>
+            </div>
+            <div class="dropdown-body">
+              <div class="add-column-input">
+                <input type="text" class="form-control" placeholder="Add Column...">
+                <a href="#">
+                  <img src="./images/search.png" alt="">
+                </a>
+              </div>
+              <div class="column-list">
+                <ul>
+                  <li>
+                    <div class="column-item">
+                      <span>Client Name</span>
+                      <a href="#">
+                        <img src="./images/cross.png" alt="">
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="column-item">
+                      <span>Parent ID</span>
+                      <a href="#">
+                        <img src="./images/cross.png" alt="">
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="column-item">
+                      <span>Wage</span>
+                      <a href="#">
+                        <img src="./images/cross.png" alt="">
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="column-item">
+                      <span>Date</span>
+                      <a href="#">
+                        <img src="./images/cross.png" alt="">
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="column-item green">
+                      <span>Revenue</span>
+                      <a href="#">
+                        <img src="./images/cross.png" alt="">
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="column-item">
+                      <span>Cost</span>
+                      <a href="#">
+                        <img src="./images/cross.png" alt="">
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="column-item">
+                      <span>Count</span>
+                      <a href="#">
+                        <img src="./images/cross.png" alt="">
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="column-item purple">
+                      <span>OPEX</span>
+                      <a href="#">
+                        <img src="./images/cross.png" alt="">
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -126,6 +227,12 @@ font-size: 14px;
           $('.wizard-inner .nav-tabs li').removeClass('active');
           $('.wizard-inner .nav-tabs li:first-child').addClass('active');
       });
+    </script>
+
+    <script type="text/javascript">
+      $('.right-control-bottom .btn').click(function() {
+        $(this).addClass('Text')
+      })
     </script>
 
 </body>

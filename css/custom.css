@@ -1,5 +1,38 @@
+@font-face {
+  font-family: 'Salesforce Sans';
+  src: url("./../fonts/sales-sans/SalesforceSans-Light.woff2") format("woff2"), url("../fonts/webfonts/SalesforceSans-Light.woff") format("woff");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Salesforce Sans';
+  src: url("./../fonts/sales-sans/SalesforceSans-LightItalic.woff2") format("woff2"), url("../fonts/webfonts/SalesforceSans-LightItalic.woff") format("woff");
+  font-style: italic;
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Salesforce Sans';
+  src: url("./../fonts/sales-sans/SalesforceSans-Regular.woff2") format("woff2"), url("../fonts/webfonts/SalesforceSans-Regular.woff") format("woff");
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Salesforce Sans';
+  src: url("./../fonts/sales-sans/SalesforceSans-Italic.woff2") format("woff2"), url("../fonts/webfonts/SalesforceSans-Italic.woff") format("woff");
+  font-style: italic;
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Salesforce Sans';
+  src: url("./../fonts/sales-sans/SalesforceSans-Bold.woff2") format("woff2"), url("../fonts/webfonts/SalesforceSans-Bold.woff") format("woff");
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'Salesforce Sans';
+  src: url("../fonts/webfonts/SalesforceSans-BoldItalic.woff2") format("woff2"), url("../fonts/webfonts/SalesforceSans-BoldItalic.woff") format("woff");
+  font-style: italic;
+  font-weight: 700; }
+
 body {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Salesforce Sans';
     font-size: 13px;
     line-height: 1.42857143;
     color: #333;
@@ -51,6 +84,17 @@ button.close:hover{
 }
 .modal.in .modal-dialog{
   margin-top: 100px
+}
+.flex-row{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.right-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding-bottom: 15px;
 }
 .wizard {
     margin: 20px auto;
@@ -342,7 +386,7 @@ span.round-tab:hover {
     margin-top: 14px;
     border-radius: 4px 4px 0px 0px;
     border: 1px solid gainsboro;
-    border-bottom: 0px;
+    padding-bottom: 30px;
 }
 .flex-element{
   display: flex;
@@ -401,9 +445,12 @@ span.round-tab:hover {
     margin-left: 10px;
     color: #2f2e2e;
 }
-.right-control-bottom .btn{
-  color: #706e6b;
-  margin-left: 8px
+.right-control-bottom .btn {
+    color: #706e6b;
+    margin-left: 4px;
+    line-height: initial;
+    padding: 0px 8px;
+    outline: none;
 }
 .search-input {
     position: relative;
@@ -412,6 +459,7 @@ span.round-tab:hover {
 }
 .search-input .form-control {
     padding-left: 35px;
+    height: 30px;
 }
 .search-input .search-icon {
     position: absolute;
@@ -419,6 +467,94 @@ span.round-tab:hover {
     color: #706e6b;
     top: 6px;
     left: 12px;
+}
+.table-header .dopdown-view{
+  max-width: 388px;
+  flex-basis: 388px;
+  background-color: white;
+  border-left: 1px solid #dddbda;
+  border-right: 1px solid #dddbda;
+  padding: 20px
+}
+.dropdown-title{
+  margin-bottom: 20px
+}
+.dropdown-box {
+    display: flex;
+    justify-content: flex-end;
+}
+.dropdown-inner{
+
+}
+.dropdown-inner .dropdown-title h4{
+  color: #3E3E3C;
+  margin-top: 0px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.dropdown-inner .dropdown-title span{
+color: #706E6B;
+font-size: 12px;
+line-height: 15px;
+}
+.dropdown-inner .dropdown-title span img{
+
+}
+.add-column-input {
+    position: relative;
+}
+.add-column-input .form-control {
+    padding-right: 37px;
+}
+.add-column-input a {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+}
+.column-list {
+    margin-top: 16px;
+}
+.column-list ul {
+    list-style-type: none;
+    padding: 0px;
+}
+.column-list ul li{
+
+}
+.column-list ul li .column-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 34px;
+    padding: 6px 12px;
+    border: 1px solid #dddbda;
+    border-radius: 4px;
+    margin-bottom: 7px;
+}
+.column-list ul li .column-item.green{
+  background-color: #e0f4c5
+}
+.column-list ul li .column-item.purple{
+  background-color: #e1c4ff
+}
+.column-list ul li .column-item span{
+  color: #005FB2;
+}
+.column-list ul li .column-item a {
+
+}
+.drop-btn.collapsed, .drop-btn.collapsed:active, .drop-btn.collapsed:focus{
+      background-color: #fff;
+
+}
+.drop-btn, .drop-btn:active, .drop-btn:focus{
+  background-color: #5791e5;
+}
+@media (min-width: 1200px)
+{
+.container {
+    width: 1200px;
+}
 }
 @media( max-width : 585px ) {
 
