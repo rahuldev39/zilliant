@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Zilliant Metis</title>
+    <style >
+      body{
+
+      }
+      .modal-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.modal-btn a span {
+margin-right: 6px;
+font-size: 14px;
+}
+    </style>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="./fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="./css/build.css" rel="stylesheet">
+    <link href="./css/custom.css" rel="stylesheet">
+    <link href="./css/bootstrap-select.css" rel="stylesheet">
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+
+  <div class="new-sheet-container">
+    <div class="new-sheet-header">
+      <h4>New Worksheet <img src="./images/pen.png" alt=""> </h4>
+      <div class="ns-left">
+        <span>12.5M Agreements Lines</span>
+        <button class="btn btn-primary">Apply</button>
+      </div>
+    </div>
+
+    <div class="new-sheet-body">
+      <div class="new-sheet-sidebar">
+        <div class="dropdown-inner">
+          <div class="dropdown-title">
+            <div class="title-control">
+                <h4>Manage Worksheet</h4>
+                <button class="btn btn-default">
+                  <img src="./images/settings.png" alt="">
+                </button>
+            </div>
+
+            <span>Select the column you'd like add to your worksheet    </span>
+          </div>
+          <div class="dropdown-body">
+            <div class="add-column-input">
+              <input type="text" class="form-control" placeholder="Add Column...">
+              <a href="#">
+                <img src="./images/search.png" alt="">
+              </a>
+            </div>
+            <div class="column-list">
+              <ul>
+                <li>
+                  <div class="column-item">
+                    <span>Client Name</span>
+                    <a href="#">
+                      <img src="./images/cross.png" alt="">
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="column-item">
+                    <span>Parent ID</span>
+                    <a href="#">
+                      <img src="./images/cross.png" alt="">
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="column-item">
+                    <span>Wage</span>
+                    <a href="#">
+                      <img src="./images/cross.png" alt="">
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="column-item">
+                    <span>Date</span>
+                    <a href="#">
+                      <img src="./images/cross.png" alt="">
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="column-item green">
+                    <span>Revenue</span>
+                    <a href="#">
+                      <img src="./images/cross.png" alt="">
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="column-item">
+                    <span>Cost</span>
+                    <a href="#">
+                      <img src="./images/cross.png" alt="">
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="column-item">
+                    <span>Count</span>
+                    <a href="#">
+                      <img src="./images/cross.png" alt="">
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="column-item purple">
+                    <span>OPEX</span>
+                    <a href="#">
+                      <img src="./images/cross.png" alt="">
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-preview-section">
+        <div class="table-info">
+          <i class="fa fa-info-circle" aria-hidden="true"></i>
+          <span>Previewing a limited number of records. See the full table by selecting “apply” in the header.</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+    <!-- jQuery Version 1.11.1 -->
+
+    <script src="js/jquery.js"></script>
+    <script src="./js/wizard.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap-select.min.js"></script>
+    <script type="text/javascript">
+      $('.modal-close').click(function() {
+          $('.wizard .tab-content .tab-pane').removeClass('active');
+          $('.wizard .tab-content .tab-pane:first-child').addClass('active');
+          $('.wizard-inner .nav-tabs li').removeClass('active');
+          $('.wizard-inner .nav-tabs li:first-child').addClass('active');
+      });
+    </script>
+
+    <script type="text/javascript">
+      $('.right-control-bottom .btn').click(function() {
+        $(this).addClass('Text')
+      })
+    </script>
+
+</body>
+
+</html>

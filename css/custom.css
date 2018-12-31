@@ -479,9 +479,14 @@ span.round-tab:hover {
 .dropdown-title{
   margin-bottom: 20px
 }
+.table-header{
+  position: relative;
+}
 .dropdown-box {
     display: flex;
     justify-content: flex-end;
+    position: absolute;
+    width: 100%;
 }
 .dropdown-inner{
 
@@ -543,12 +548,89 @@ line-height: 15px;
 .column-list ul li .column-item a {
 
 }
-.drop-btn.collapsed, .drop-btn.collapsed:active, .drop-btn.collapsed:focus{
+.right-control-bottom .drop-btn.collapsed,
+.right-control-bottom .drop-btn.collapsed:active,
+.right-control-bottom .drop-btn.collapsed:focus{
       background-color: #fff;
+      color: #706e6b;
 
 }
-.drop-btn, .drop-btn:active, .drop-btn:focus{
-  background-color: #5791e5;
+.right-control-bottom .drop-btn,
+.right-control-bottom .drop-btn:active,
+.right-control-bottom .drop-btn:focus {
+    background-color: #5791e5;
+    color: white;
+}
+.create-sheet-container {
+    padding: 45px 0px;
+}
+.create-sheet-text h2 {
+    margin-top: 0px;
+    color: #3E3E3C;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.create-sheet-text {
+    margin-bottom: 50px;
+}
+.create-sheet-container .btn {
+    min-width: 190px;
+    height: 33px;
+    font-weight: 300;
+}
+.new-sheet-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 2px solid #d8d8d8;
+}
+.new-sheet-header h4{
+  color: #3E3E3C;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 25px;
+}
+.new-sheet-header .ns-left span{
+color: #706E6B;
+font-size: 12px;
+line-height: 15px;
+margin-right: 15px
+}
+.new-sheet-header .ns-left .btn {
+    font-weight: 100;
+    height: 30px;
+    line-height: 15px;
+    font-size: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.new-sheet-sidebar {
+    max-width: 388px;
+    flex-basis: 388px;
+    padding: 20px;
+}
+.title-control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.new-sheet-body {
+    display: flex;
+}
+.table-preview-section {
+    flex: 1;
+    min-height: calc(100vh - 83px);
+    border-left: 2px solid #d8d8d8;
+}
+.table-info{
+  padding: 10px 20px;
+  background-color: #d8d8d8;
+  color: #706e6b
+}
+.table-info i{
+  margin-right: 15px
 }
 @media (min-width: 1200px)
 {
