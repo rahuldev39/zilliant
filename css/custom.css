@@ -468,13 +468,14 @@ span.round-tab:hover {
     top: 6px;
     left: 12px;
 }
-.table-header .dopdown-view{
-  max-width: 388px;
-  flex-basis: 388px;
-  background-color: white;
-  border-left: 1px solid #dddbda;
-  border-right: 1px solid #dddbda;
-  padding: 20px
+.table-header .dopdown-view {
+    max-width: 388px;
+    flex-basis: 388px;
+    background-color: white;
+    border-left: 1px solid #dddbda;
+    border-right: 1px solid #dddbda;
+    padding: 20px;
+    border-bottom: 1px solid #dddbda;
 }
 .dropdown-title{
   margin-bottom: 20px
@@ -523,8 +524,17 @@ line-height: 15px;
     list-style-type: none;
     padding: 0px;
 }
-.column-list ul li{
-
+.column-list ul li label {
+    display: block;
+    font-weight: normal;
+    cursor: pointer;
+}
+.column-list ul li label input[type=checkbox]{
+  display: none;
+}
+.column-list ul li label input[type=checkbox]:checked + .column-item {
+    background-color: #e8f4ff;
+    border: 1px solid #0070d2;
 }
 .column-list ul li .column-item {
     display: flex;
