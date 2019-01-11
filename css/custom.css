@@ -698,14 +698,17 @@ margin-right: 15px
     border-radius: 8px 8px 0px 0px;
     color: #9a9a9a;
     font-size: 14px;
+    cursor: pointer
 }
 
 .sheet-list li.active {
-    background-color: #fbfbfb;
+    background-color: #ffffff;
     color: #0070d2;
     font-weight: 500;
-    margin-bottom: -1px;
+    margin-bottom: -2px;
+    border-bottom: 1px solid #fbfbfb;
 }
+
 .sheet-list li .btn {
     padding: 0px;
     outline: none;
@@ -733,4 +736,39 @@ margin-right: 15px
 }
 .edit-controls .edit-dropdown .edit-dropdown-inner > div{
   margin: 5px 0px
+}
+.warning-modal .modal-header .close {
+    margin-top: -2px;
+    background-color: transparent;
+    border: none;
+    position: static;
+    color: #f7f7f7;
+    padding: 0px;
+    font-size: 34px;
+    height: auto;
+    width: auto;
+    line-height: 16px;
+}
+.warning-modal .modal-header {
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #c23934;
+    color: white;
+    padding: 12px 15px;
+}
+.warning-modal  .modal-header i{
+  display: inline-block;
+  margin-right: 10px
+}
+.modal-action{
+  margin-top: 20px
+}
+.modal-action .btn {
+    min-width: 100px;
+    margin-right: 8px;
+}
+@media (min-width: 768px)
+{
+.warning-modal .modal-dialog {
+    width: 380px;
+}
 }
