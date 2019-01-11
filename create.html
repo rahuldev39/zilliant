@@ -59,8 +59,7 @@ font-size: 14px;
               </a>
             </div>
             <div class="media-body">
-              <span>Workbook</span>
-              <h4 class="media-heading">Client Data <i class="fa fa-caret-down" aria-hidden="true"></i></h4>
+              <h4 class="media-heading">Workbook</h4>
             </div>
           </div>
 
@@ -102,110 +101,36 @@ font-size: 14px;
                   <button class="btn btn-default">
                     <i class="fa fa-repeat" aria-hidden="true"></i>
                   </button>
-                <button class="btn btn-default">
-                  <i class="fa fa-cog" aria-hidden="true"></i>
-                  <i class="fa fa-caret-down" aria-hidden="true"></i>
-                </button>
 
-                <button class="btn btn-default drop-btn collapsed" data-toggle="collapse" href="#sheet-dropdown" aria-expanded="false" aria-controls="sheet-dropdown">
-                  <i class="fa fa-calculator" aria-hidden="true"></i>
-                </button>
-                <button class="btn btn-default">
-                  <i class="fa fa-filter" aria-hidden="true"></i>
-                </button>
               </div>
             </div>
 
           </div>
         </div>
       </div>
-      <div class="dropdown-box">
-        <div class="dopdown-view collapse" id="sheet-dropdown">
-          <div class="dropdown-inner">
-            <div class="dropdown-title">
-              <h4>Manage Worksheet</h4>
-              <span>Sheet1 <img src="./images/pen.png" alt=""> </span>
-            </div>
-            <div class="dropdown-body">
-              <div class="add-column-input">
-                <input type="text" class="form-control" placeholder="Add Column...">
-                <a href="#">
-                  <img src="./images/search.png" alt="">
-                </a>
-              </div>
-              <div class="column-list">
-                <ul>
-                  <li>
-                    <div class="column-item">
-                      <span>Client Name</span>
-                      <a href="#">
-                        <img src="./images/cross.png" alt="">
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="column-item">
-                      <span>Parent ID</span>
-                      <a href="#">
-                        <img src="./images/cross.png" alt="">
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="column-item">
-                      <span>Wage</span>
-                      <a href="#">
-                        <img src="./images/cross.png" alt="">
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="column-item">
-                      <span>Date</span>
-                      <a href="#">
-                        <img src="./images/cross.png" alt="">
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="column-item green">
-                      <span>Revenue</span>
-                      <a href="#">
-                        <img src="./images/cross.png" alt="">
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="column-item">
-                      <span>Cost</span>
-                      <a href="#">
-                        <img src="./images/cross.png" alt="">
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="column-item">
-                      <span>Count</span>
-                      <a href="#">
-                        <img src="./images/cross.png" alt="">
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="column-item purple">
-                      <span>OPEX</span>
-                      <a href="#">
-                        <img src="./images/cross.png" alt="">
-                      </a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
+
+    </div>
+
+    <div class="table-container">
+      <div class="sheet-list">
+        <ul>
+          <li class="active">
+            <span>sheet 1</span>
+          </li>
+          <li>
+            <span>sheet 2</span>
+          </li>
+          <li>
+            <span>sheet 3</span>
+          </li>
+          <li class="add-btn-item">
+            <button class="btn btn-link add-icon" data-toggle="modal" data-target="#myModal">
+              <img src="./images/add-icon.jpg" alt="">
+            </button>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div class="create-sheet-container text-center">
@@ -214,14 +139,210 @@ font-size: 14px;
         <span>Get started by adding a new worksheet to this workbook.</span>
       </div>
 
-      <button class="btn btn-primary">Create Worksheet</button>
+      <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Create Worksheet</button>
 
     </div>
 
   </div>
 
 
+  <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
 
+    <div class="modal-body">
+      <button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close "><span aria-hidden="true">&times;</span></button>
+      <section>
+      <div class="wizard">
+          <form role="form">
+              <div class="tab-content">
+                  <div class="tab-pane active" role="tabpanel" id="step1">
+                      <div class="step1">
+                        <div class="">
+                          <div class="panel panel-primary">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">Create New Workbook</h3>
+                            </div>
+                            <div class="panel-body">
+                              <div class="form-group">
+                                <label for="">Workbook Title</label>
+                                <input type="text" class="form-control" placeholder="Add Workbook Title">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="wizard-controls text-center">
+                        <button type="button" class="btn btn-default modal-close" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary next-step">Next</button>
+                      </div>
+
+                  </div>
+
+
+                  <div class="tab-pane" role="tabpanel" id="step2">
+                      <div class="step2">
+                        <div class="">
+                          <div class="panel panel-primary">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">Create New Workbook</h3>
+                            </div>
+                            <div class="panel-body">
+                              <div class="form-group">
+                                <label for="">Choose Entity</label>
+                                <select class="form-control" name="">
+                                  <option value="">--Select Value---</option>
+                                  <option value="">Entity Value 1</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="wizard-controls text-center">
+                        <button type="button" class="btn btn-default prev-step">Previous</button>
+                        <button type="button" class="btn btn-primary next-step">Next</button>
+                      </div>
+
+
+                  </div>
+
+                  <div class="tab-pane" role="tabpanel" id="step3">
+
+                    <div class="step3">
+                      <div class="">
+                        <div class="panel panel-primary">
+                          <div class="panel-heading">
+                            <h3 class="panel-title">Create New Workbook</h3>
+                          </div>
+                          <div class="panel-body">
+
+                            <div class="form-group checkbox-container">
+
+                                <label>Column Mapping</label>
+
+                            <div class="checkbox checkbox-primary checkbox-inline">
+                                <input id="checkbox1" class="styled" type="checkbox" >
+                                <label for="checkbox1">
+                                    Primary
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-primary checkbox-inline">
+                                <input id="checkbox2" class="styled" type="checkbox" >
+                                <label for="checkbox2">
+                                    Primary
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-primary checkbox-inline">
+                                <input id="checkbox3" class="styled" type="checkbox" >
+                                <label for="checkbox3">
+                                    Primary
+                                </label>
+                            </div>
+
+                            <div class="checkbox checkbox-primary checkbox-inline">
+                                <input id="checkbox3" class="styled" type="checkbox" >
+                                <label for="checkbox3">
+                                    Primary
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-primary checkbox-inline">
+                                <input id="checkbox3" class="styled" type="checkbox" >
+                                <label for="checkbox3">
+                                    Primary
+                                </label>
+                            </div>
+
+                            <div class="checkbox checkbox-primary checkbox-inline">
+                                <input id="checkbox3" class="styled" type="checkbox" >
+                                <label for="checkbox3">
+                                    Primary
+                                </label>
+                            </div>
+
+                            <div class="checkbox checkbox-primary checkbox-inline">
+                                <input id="checkbox3" class="styled" type="checkbox" >
+                                <label for="checkbox3">
+                                    Primary
+                                </label>
+                            </div>
+
+                            <div class="checkbox checkbox-primary checkbox-inline">
+                                <input id="checkbox3" class="styled" type="checkbox" >
+                                <label for="checkbox3">
+                                    Primary
+                                </label>
+                            </div>
+
+                            <div class="checkbox checkbox-primary checkbox-inline">
+                                <input id="checkbox3" class="styled" type="checkbox" >
+                                <label for="checkbox3">
+                                    Primary
+                                </label>
+                            </div>
+
+                            <div class="checkbox checkbox-primary checkbox-inline">
+                                <input id="checkbox3" class="styled" type="checkbox" >
+                                <label for="checkbox3">
+                                    Primary
+                                </label>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="wizard-controls text-center">
+                      <button type="button" class="btn btn-default prev-step">Previous</button>
+                      <button type="button" class="btn btn-primary btn-info-full modal-close" data-dismiss="modal">Finish</button>
+                    </div>
+
+                  </div>
+
+                  <div class="clearfix"></div>
+              </div>
+          </form>
+
+          <div class="wizard-inner">
+              <div class="connecting-line"></div>
+              <ul class="nav nav-tabs" role="tablist">
+
+                  <li role="presentation" class="active">
+                      <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+                          <span class="round-tab">
+
+                          </span>
+                      </a>
+                  </li>
+
+                  <li role="presentation" class="disabled">
+                      <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+                          <span class="round-tab">
+
+                          </span>
+                      </a>
+                  </li>
+                  <li role="presentation" class="disabled">
+                      <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+                          <span class="round-tab">
+
+                          </span>
+                      </a>
+                  </li>
+
+
+              </ul>
+          </div>
+      </div>
+  </section>
+    </div>
+
+  </div>
+</div>
+</div>
 
 
     <!-- jQuery Version 1.11.1 -->

@@ -386,7 +386,7 @@ span.round-tab:hover {
     margin-top: 14px;
     border-radius: 4px 4px 0px 0px;
     border: 1px solid gainsboro;
-    padding-bottom: 30px;
+    padding-bottom: 48px;
 }
 .flex-element{
   display: flex;
@@ -673,4 +673,64 @@ margin-right: 15px
         position: absolute;
         left: 35%;
     }
+}
+
+
+.table-container {
+    margin-top: -44px;
+    position: relative;
+    margin-left: 2px;
+}
+.sheet-list{
+
+}
+.sheet-list ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.sheet-list li {
+    padding: 11px 15px;
+    background-color: #f3f2f2;
+    margin-right: 2px;
+    border-radius: 8px 8px 0px 0px;
+    color: #9a9a9a;
+    font-size: 14px;
+}
+
+.sheet-list li.active {
+    background-color: #fbfbfb;
+    color: #0070d2;
+    font-weight: 500;
+    margin-bottom: -1px;
+}
+.sheet-list li .btn {
+    padding: 0px;
+    outline: none;
+    margin-top: -4px;
+}
+.sheet-list li .btn img{
+
+}
+.edit-controls{
+
+}
+.edit-controls h4 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.edit-controls .edit-dropdown {
+    padding: 15px;
+    background-color: #efefef;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.edit-controls .edit-dropdown .edit-dropdown-inner {
+    max-width: 300px;
+}
+.edit-controls .edit-dropdown .edit-dropdown-inner > div{
+  margin: 5px 0px
 }
