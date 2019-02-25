@@ -822,12 +822,12 @@ margin-right: 15px
 .wizard .table thead th {
     background-color: #fafaf9;
     color: #080707;
-    padding: 7px 7px;
+    padding: 6px 7px;
 }
-.wizard .table tr td{
-  font-size: 12px;
-  color: #514f4d;
-
+.wizard .table tr td {
+    font-size: 12px;
+    color: #514f4d;
+    padding: 4px 7px;
 }
 .wizard .table .badge {
     min-width: 95px;
@@ -848,6 +848,9 @@ margin-right: 15px
 }
 .wizard-checkbox label {
     margin-bottom: 0px;
+
+}
+.wizard-checkbox{
     line-height: .7;
 }
 .wizard-checkbox input[type="checkbox"] + span {
@@ -878,6 +881,14 @@ margin-right: 15px
 }
 .wizard-checkbox input[type="checkbox"]:checked + span::after{
     background-image: url(./../images/check2.svg);
+}
+.table-heading h4 {
+    font-size: 20px;
+    color: #3e3e3c;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 25px;
 }
 @media (min-width: 768px)
 {
