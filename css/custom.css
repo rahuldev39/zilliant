@@ -100,10 +100,9 @@ button.close:hover{
     margin: 20px auto;
     background: #fff;
 }
-
 .wizard .nav-tabs {
     position: relative;
-    margin: 40px auto;
+    margin: 80px auto;
     margin-bottom: 0;
     display: flex;
     align-items: center;
@@ -121,17 +120,17 @@ margin: 0 auto;
 .wizard-controls .btn {
     min-width: 114px;
 }
-    .connecting-line {
-        height: 2px;
-        background: #e0e0e0;
-        position: absolute;
-        width: 100%;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-        top: 50%;
-        z-index: 1;
-    }
+.connecting-line {
+    height: 5px;
+    background: #cfd7e6;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: calc(50% - 2px);
+    z-index: 1;
+}
 
 .wizard .nav-tabs > li.active > a, .wizard .nav-tabs > li.active > a:hover, .wizard .nav-tabs > li.active > a:focus {
     color: #555555;
@@ -141,26 +140,25 @@ margin: 0 auto;
 }
 
 span.round-tab {
-    width: 20px;
-    height: 20px;
+    width: 8px;
+    height: 8px;
     line-height: 70px;
     display: inline-block;
     border-radius: 100px;
-    background: #fff;
-    border: 5px solid #e0e0e0;
+    background: #cfd7e6;
     z-index: 2;
     position: absolute;
     left: 0;
     text-align: center;
     font-size: 18px;
-    box-shadow: 0px 0px 0px 6px white;
+    box-shadow: 0px 0px 0px 3px white;
 }
 span.round-tab i{
     color:#555555;
 }
 .wizard li.active span.round-tab {
     background: #fff;
-    border: 5px solid #1589ee;
+    box-shadow: 0px 0px 0px 3px #0070d2;
 }
 .wizard li.active span.round-tab i{
     color: #5bc0de;
@@ -172,16 +170,16 @@ span.round-tab i{
 }
 .panel-body {
     padding: 15px;
-    background-color: #fff6f3;
+    background-color: rgba(255, 70, 18, 0.05);
+    min-height: 200px;
+}
+.panel-body .form-control{
+  max-width: 386px
 }
 span.round-tab:hover {
-    color: #333;
-    border: 2px solid #333;
+    background-color: #0070d2;
 }
 
-.wizard .nav-tabs > li {
-
-}
 
 .wizard li:after {
     content: " ";
@@ -208,10 +206,11 @@ span.round-tab:hover {
 }
 
 .wizard .nav-tabs > li a {
-    width: 20px;
-    height: 20px;
+    width: 8px;
+    height: 8px;
     border-radius: 100%;
     padding: 0;
+    border: 0px;
 }
 
     .wizard .nav-tabs > li a:hover {
@@ -230,12 +229,14 @@ span.round-tab:hover {
     max-width: 500px;
 }
 .form-control {
-    border: 1px solid #bdbcbc;
+    border: 1px solid #c8c8c8;
+    font-size: 13px;
+    box-shadow: none;
 }
 .form-control:focus {
-    border-color: #ffa385;
+    border-color: #1689ee;
     outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+    /* -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6); */
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgb(230, 224, 222);
 }
 .wizard h3 {
@@ -243,7 +244,7 @@ span.round-tab:hover {
     color: #262b2f;
 }
 .panel-primary {
-    border-color: #ff461a82 !important;
+    border-color: #ff4612 !important;
     overflow: hidden;
 }
 .step1 .row {
@@ -449,7 +450,7 @@ span.round-tab:hover {
     color: #706e6b;
     margin-left: 4px;
     line-height: initial;
-    padding: 0px 8px;
+    padding: 0px 10px;
     outline: none;
 }
 .search-input {
@@ -459,12 +460,12 @@ span.round-tab:hover {
 }
 .search-input .form-control {
     padding-left: 35px;
-    height: 30px;
+    height: 32px;
 }
 .search-input .search-icon {
     position: absolute;
     font-size: 15px;
-    color: #706e6b;
+    color: #b0adab;
     top: 6px;
     left: 12px;
 }
@@ -576,9 +577,10 @@ line-height: 15px;
 }
 .create-sheet-text h2 {
     margin-top: 0px;
-    color: #3E3E3C;
     font-weight: 300;
     margin-bottom: 15px;
+    font-size: 28px;
+    color: #3e3e3c;
 }
 .create-sheet-text {
     margin-bottom: 50px;
@@ -765,6 +767,117 @@ margin-right: 15px
 .modal-action .btn {
     min-width: 100px;
     margin-right: 8px;
+}
+.workbook-title{
+
+}
+.workbook-title span {
+    font-size: 14px;
+    color: #006dcc;
+    font-weight: 600;
+    display: block;
+    text-transform: uppercase;
+}
+.workbook-title h4 {
+    color: #2b2826;
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+.workbook-controls{
+  padding-bottom: 0px
+}
+.workbook-controls .right-control-bottom .btn {
+    color: #005fb2;
+    margin-left: 13px;
+}
+.workbook-header {
+    padding: 20px 0px;
+}
+.form-container {
+    max-width: 386px;
+    margin: 0 auto;
+    margin-bottom: 63px;
+    min-height: 130px;
+}
+.form-container label {
+    font-size: 12px;
+    color: #706e6b;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.form-group {
+    margin-bottom: 18px;
+}
+.panel .form-group label{
+  font-size: 16px;
+  color: #3e3e3c;
+  font-weight: 400;
+  margin-bottom: 9px
+}
+.wizard .table {
+    max-width: 815px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.wizard .table thead th {
+    background-color: #fafaf9;
+    color: #080707;
+    padding: 7px 7px;
+}
+.wizard .table tr td{
+  font-size: 12px;
+  color: #514f4d;
+
+}
+.wizard .table .badge {
+    min-width: 95px;
+    padding: 4px 4px;
+    color: #2b2826;
+    font-size: 12px;
+    font-weight: 400;
+}
+.badge-warning{
+  background-color: rgba(255,154,60,0.2);
+
+}
+.badge-success{
+  background-color: rgba(54,144,64,0.2)
+}
+.wizard-checkbox input[type="checkbox"]{
+  display: none;
+}
+.wizard-checkbox label {
+    margin-bottom: 0px;
+    line-height: .7;
+}
+.wizard-checkbox input[type="checkbox"] + span {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    border-radius: 4px;
+    border: 1px solid #dddbda;
+    font: normal normal normal 14px/1 FontAwesome;
+    position: relative;
+    background-color: white;
+    cursor: pointer;
+    transition: all ease-in-out 300ms
+}
+.wizard-checkbox input[type="checkbox"] + span::after {
+    content: "";
+    background-image: url(./../images/check.svg);
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+}
+.wizard-checkbox input[type="checkbox"]:checked + span{
+  background-color: #4bca81;
+  border: 1px solid #4bca81;
+}
+.wizard-checkbox input[type="checkbox"]:checked + span::after{
+    background-image: url(./../images/check2.svg);
 }
 @media (min-width: 768px)
 {

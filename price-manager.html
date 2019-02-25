@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Zilliant Metis</title>
+    <style >
+      body{
+
+      }
+      .modal-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.modal-btn a span {
+margin-right: 6px;
+font-size: 14px;
+}
+    </style>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="./fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="./css/build.css" rel="stylesheet">
+    <link href="./css/custom.css" rel="stylesheet">
+    <link href="./css/bootstrap-select.css" rel="stylesheet">
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="table-header">
+      <div class="workbook-header">
+        <div class="row flex-row">
+          <div class="col-md-4">
+            <div class="workbook-title">
+              <span>Workbooks</span>
+              <h4>Manager Dashboard</h4>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="workbook-controls right-controls">
+              <div class="flex-element right-control-bottom">
+                  <div class="search-input">
+                    <div class="search-icon">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Search">
+                  </div>
+                  <button class="btn btn-default">
+                    <i class="fa fa-filter" aria-hidden="true"></i>
+                  </button>
+                    <button class="btn btn-default">
+                      Create New Workbook
+                    </button>
+
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="">
+      <img src="./images/dummy-table.jpg" alt="" style="width:100%">
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+    <!-- jQuery Version 1.11.1 -->
+
+    <script src="js/jquery.js"></script>
+    <script src="./js/wizard.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap-select.min.js"></script>
+    <script type="text/javascript">
+      $('.modal-close').click(function() {
+          $('.wizard .tab-content .tab-pane').removeClass('active');
+          $('.wizard .tab-content .tab-pane:first-child').addClass('active');
+          $('.wizard-inner .nav-tabs li').removeClass('active');
+          $('.wizard-inner .nav-tabs li:first-child').addClass('active');
+      });
+    </script>
+
+    <script type="text/javascript">
+      $('.right-control-bottom .btn').click(function() {
+        $(this).addClass('Text')
+      })
+    </script>
+
+</body>
+
+</html>
