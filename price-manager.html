@@ -29,6 +29,8 @@ font-size: 14px;
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
       <link href="./fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+      <link href="./css/owl.carousel.min.css" rel="stylesheet" />
+      <link href="./css/owl.theme.default.min.css" rel="stylesheet" />
     <link href="./css/build.css" rel="stylesheet">
     <link href="./css/custom.css" rel="stylesheet">
     <link href="./css/bootstrap-select.css" rel="stylesheet">
@@ -46,7 +48,53 @@ font-size: 14px;
 
 <body>
 
-  <div class="container">
+  <div class="" style="padding:0px 35px">
+    <div class="cards-container">
+      <div id="owl-demo" class="owl-carousel owl-theme card-slider">
+        <div class="card-item">
+          <span>Number of Rows</span>
+          <h4>7</h4>
+        </div>
+        <div class="card-item">
+          <span>Current Revenue</span>
+          <h4>$10,524,725</h4>
+        </div>
+        <div class="card-item">
+          <span>Projected Revenue</span>
+          <h4>$10,735,220</h4>
+        </div>
+        <div class="card-item">
+          <span>Alloy Total Cost</span>
+          <h4>$5.2 M</h4>
+        </div>
+        <div class="card-item">
+          <span>Alloy Total</span>
+          <h4>$8.2 M</h4>
+        </div>
+        <div class="card-item">
+          <span>Revenue Change</span>
+          <h4 class="green">289.2 K</h4>
+        </div>
+        <div class="card-item">
+          <span>Number of Rows</span>
+          <h4>7</h4>
+        </div>
+        <div class="card-item">
+          <span>Current Revenue</span>
+          <h4>$10,524,725</h4>
+        </div>
+        <div class="card-item">
+          <span>Projected Revenue</span>
+          <h4>$10,735,220</h4>
+        </div>
+      </div>
+
+      <div class="card-slider-toggle-container text-center">
+        <a href="#" class="card-slider-toggle">
+          <img src="./images/chevron  b.svg" alt="">
+        </a>
+      </div>
+    </div>
 
     <div class="table-header">
       <div class="workbook-header">
@@ -100,6 +148,8 @@ font-size: 14px;
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="./js/bootstrap-select.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+
     <script type="text/javascript">
       $('.modal-close').click(function() {
           $('.wizard .tab-content .tab-pane').removeClass('active');
@@ -113,6 +163,28 @@ font-size: 14px;
       $('.right-control-bottom .btn').click(function() {
         $(this).addClass('Text')
       })
+    </script>
+
+    <script type="text/javascript">
+      $('.card-slider-toggle').on('click',function functionName() {
+        $('.card-slider').slideToggle();
+        $('.card-slider-toggle').toggleClass('down')
+      })
+    </script>
+    <script type="text/javascript">
+    $('#owl-demo').owlCarousel({
+    loop: false ,
+    autoplay: false,
+    navClass: ['nav-prev', 'nav-next'],
+    navText: ['', ''],
+    margin: 14,
+    startPosition: -0,
+    items: 3,
+    nav: true,
+    dots: false,
+    center: false,
+    autoWidth: true,
+    })
     </script>
 
 </body>
