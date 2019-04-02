@@ -958,3 +958,20 @@ margin-right: 15px
 .owl-theme .owl-nav {
     margin-top: 0px;
 }
+.wizard-slection-header{
+
+}
+.wizard-slection-header h4.workbook-name{
+  font-family: 'Lato';
+  font-size: 16px;
+  font-weight: 400;
+  color: #3e3e3c;
+}
+.wizard-slection-header p{
+border-left: 2px solid #0070d2;
+font-size: 14px;
+color: #706e6b;
+font-weight: 400;
+font-family: 'Lato';
+padding: 1px 0px 1px 10px;
+}
