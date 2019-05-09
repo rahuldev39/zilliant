@@ -114,12 +114,14 @@ font-size: 14px;
                     </div>
                     <input type="text" class="form-control" placeholder="Search">
                   </div>
+                  <button class="btn btn-default column-slide-toggle">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                  </button>
                   <button class="btn btn-default">
                     <i class="fa fa-filter" aria-hidden="true"></i>
                   </button>
-                    <button class="btn btn-default">
-                      Create New Workbook
-                    </button>
+
+
 
                 </div>
             </div>
@@ -129,8 +131,104 @@ font-size: 14px;
 
     </div>
 
-    <div class="">
+    <div class="" style="position:relative">
       <img src="./images/dummy-table.jpg" alt="" style="width:100%">
+      <div class="new-sheet-sidebar">
+        <div class="dropdown-title">
+          <div class="title-control">
+              <h4>Columns</h4>
+              <button class="btn btn-link column-slide-toggle">
+                <img src="./images/forward.svg" alt="">
+              </button>
+          </div>
+        </div>
+        <div class="dropdown-inner">
+
+          <div class="dropdown-body">
+            <div class="manage-column">
+              <h5>Manage Columns</h5>
+              <span class="down-icon">
+                <img src="./images/down.svg" alt="">
+              </span>
+            </div>
+            <div class="add-column-input">
+              <input type="text" class="form-control" placeholder="Add Column...">
+              <a href="#">
+                <img src="./images/search.png" alt="">
+              </a>
+            </div>
+            <div class="column-list">
+              <ul>
+                <li>
+                  <label>
+                    <input type="checkbox" name="" value="">
+                    <div class="column-item">
+                      <span>Client Name</span>
+                      <a href="#">
+                        <img src="./images/close.svg" alt="">
+                      </a>
+                    </div>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="" value="">
+                    <div class="column-item">
+                      <span>Parent ID</span>
+                      <a href="#">
+                        <img src="./images/close.svg" alt="">
+                      </a>
+                    </div>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="" value="">
+                    <div class="column-item">
+                      <span>Wage</span>
+                      <a href="#">
+                        <img src="./images/close.svg" alt="">
+                      </a>
+                    </div>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="" value="">
+                    <div class="column-item">
+                      <span>Date</span>
+                      <a href="#">
+                        <img src="./images/close.svg" alt="">
+                      </a>
+                    </div>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="" value="">
+                    <div class="column-item green">
+                      <span>Revenue</span>
+                      <a href="#">
+                        <img src="./images/close.svg" alt="">
+                      </a>
+                    </div>
+                  </label>
+                </li>
+
+              </ul>
+            </div>
+            <div class="column-list-footer">
+              <span>GROUP</span>
+              <div class="column-list-footer-controls">
+                <div class="boxed-link"></div>
+                <a href="#">
+                  <img src="./images/close.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
 
@@ -184,6 +282,12 @@ font-size: 14px;
     dots: false,
     center: false,
     autoWidth: true,
+    })
+    </script>
+
+    <script type="text/javascript">
+    $(".column-slide-toggle").on('click', function() {
+      $(".new-sheet-sidebar").toggleClass("show")
     })
     </script>
 
