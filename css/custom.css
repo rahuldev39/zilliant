@@ -1038,3 +1038,35 @@ font-weight: 400;
 .column-list-footer-controls a img{
   display: block;
 }
+.upload-box {
+    border: 1px dotted #1589ee;
+    border-radius: 8px;
+    background-color: rgba(21, 137, 238, 0.1);
+    min-height: 140px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 66px;
+    display: flex;
+    align-items: center;
+    padding: 33px;
+    position: relative;
+}
+.upload-box .uploaded-check-icon {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+.upload-box .upload-icon{
+  margin-right: 23px
+}
+.upload-box .upload-text{
+  font-family: 'Lato';
+  font-size: 13px;
+  color: #3e3e3c;
+  font-weight: 400;
+
+}
+.upload-box .upload-text a{
+  color: #006dcc;
+  font-weight: bold;
+}
