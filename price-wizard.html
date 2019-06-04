@@ -250,6 +250,92 @@ font-size: 14px;
                         </table>
                       </div>
 
+                      <div class="table-responsive">
+                        <table class="table table-full">
+                            <thead>
+                              <tr>
+                                <th>
+                                  <div class="wizard-checkbox">
+                                    <label>
+                                      <input type="checkbox" name="" value="">
+                                      <span></span>
+                                    </label>
+                                  </div>
+                                </th>
+                                <th>Column from File</th>
+                                <th>Preview Info from File</th>
+                                <th width="250">Column from Worksheet</th>
+                                <th>Preview Info from Worksheet</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <div class="wizard-checkbox">
+                                    <label>
+                                      <input type="checkbox" name="" value="">
+                                      <span></span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>Metals</td>
+                                <td>17-4_Metal</td>
+                                <td>
+                                  <div class="column-dropdown">
+                                    <span class="red">Choose a column to match</span>
+                                    <div class="dropdown ">
+                                      <button class="btn btn-default" type="button" id="dropdownMenuButton" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+                                        <img src="./images/down.svg" alt="">
+                                      </button>
+                                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Metal</a>
+                                        <a class="dropdown-item" href="#">Frequency</a>
+                                        <a class="dropdown-item" href="#">Mill Source</a>
+                                        <a class="dropdown-item" href="#">Index Value</a>
+                                      </div>
+                                  </div>
+
+                                  </div>
+                                </td>
+                                <td>--</td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="wizard-checkbox">
+                                    <label>
+                                      <input type="checkbox" name="" value="">
+                                      <span></span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>Index</td>
+                                <td>0.4700</td>
+                                <td>
+                                  <div class="column-dropdown">
+                                    <span class="red">Choose a column to match</span>
+                                    <div class="dropdown ">
+                                      <button class="btn btn-default" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="./images/down.svg" alt="">
+                                      </button>
+                                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Metal</a>
+                                        <a class="dropdown-item" href="#">Frequency</a>
+                                        <a class="dropdown-item" href="#">Mill Source</a>
+                                        <a class="dropdown-item" href="#">Index Value</a>
+                                      </div>
+                                  </div>
+
+                                  </div>
+                                </td>
+                                <td>--</td>
+                              </tr>
+
+
+
+                            </tbody>
+                        </table>
+                      </div>
+
                     </div>
                   </div>
 
@@ -379,6 +465,16 @@ font-size: 14px;
       $('.right-control-bottom .btn').click(function() {
         $(this).addClass('Text')
       })
+    </script>
+
+    <script type="text/javascript">
+    $('.table-responsive').on('show.bs.dropdown', function () {
+   $('.table-responsive').css( "overflow", "inherit" );
+});
+
+$('.table-responsive').on('hide.bs.dropdown', function () {
+   $('.table-responsive').css( "overflow", "auto" );
+})
     </script>
 
 </body>
