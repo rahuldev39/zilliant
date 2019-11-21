@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Zilliant Metis</title>
+    <style >
+      body{
+
+      }
+      .modal-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.modal-btn a span {
+margin-right: 6px;
+font-size: 14px;
+}
+    </style>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="./fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="./css/build.css" rel="stylesheet">
+    <link href="./css/custom.css" rel="stylesheet">
+    <link href="./css/bootstrap-select.css" rel="stylesheet">
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="wizard-slection-header">
+      <h4 class="workbook-name">Workbook Name</h4>
+      <p>Alloy Formulas</p>
+    </div>
+    <div class="wizard">
+        <form role="form">
+            <div class="tab-content">
+                <div class="tab-pane active" role="tabpanel" id="step1">
+                    <div class="step1">
+                      <div class="">
+                        <div class="create-sheet-text text-center">
+                          <h2>Would you like to start from a datasource?</h2>
+                          <span>Get started by giving your new workbook a name.</span>
+                        </div>
+
+                        <div class="datasource-container text-center mx-auto mb-5">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <label class="d-block">
+                                <input class="d-none" type="radio" name="datasource" value="" checked>
+                                <div class="datasource-item d-flex flex-column">
+                                  <img src="./images/icon-file-65-e-76-c-png.png" alt="" width="100" class="m-auto">
+                                  <h4>Import from File</h4>
+                                  <span>Upload any CSV, XLS, or XLSX file.</span>
+                                </div>
+                              </label>
+                            </div>
+                            <div class="col-md-4">
+                              <label class="d-block">
+                                <input class="d-none" type="radio" name="datasource" value="">
+                                <div class="datasource-item d-flex flex-column">
+                                  <img src="./images/icon-data-6-cc-588-png.png" alt="" width="100" class="m-auto">
+                                  <h4>Managed Datasource</h4>
+                                  <span>Select existing from database.</span>
+                                </div>
+                              </label>
+                            </div>
+                            <div class="col-md-4">
+                              <label class="d-block">
+                                <input class="d-none" type="radio" name="datasource" value="">
+                                <div class="datasource-item d-flex flex-column">
+                                  <img src="./images/icon-manual-ef-7489-png.png" alt="" width="100" class="m-auto">
+                                  <h4>No Datasource</h4>
+                                  <span>Build a dataset manually.</span>
+                                </div>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="wizard-controls text-center">
+                      <button type="button" class="btn btn-default modal-close" data-dismiss="modal">Cancel</button>
+                      <button type="button" class="btn btn-primary next-step">Next</button>
+                    </div>
+
+                </div>
+
+
+                <div class="tab-pane" role="tabpanel" id="step2">
+                    <div class="step2">
+                      <div class="">
+                        <div class="create-sheet-text text-center">
+                          <h2>Create your first worksheet</h2>
+                          <span>Workbooks contain individual worksheets. Name your first one here.</span>
+                        </div>
+
+                        <div class="form-container">
+                          <div class="form-group">
+                            <label for="">Worksheet Name</label>
+                            <input type="text" class="form-control" placeholder="Add Worksheet Name">
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="wizard-controls text-center">
+                      <button type="button" class="btn btn-default prev-step">Previous</button>
+                      <button type="button" class="btn btn-primary next-step">Next</button>
+                    </div>
+
+
+                </div>
+
+                <div class="tab-pane" role="tabpanel" id="step3">
+
+                  <div class="step3">
+                    <div class="">
+
+                      <div class="create-sheet-text text-center">
+                        <h2>Select a datasource.</h2>
+                        <span>Choose a datasource to bring the data you want to update into the worksheet.</span>
+                      </div>
+
+                      <div class="panel panel-primary">
+
+                        <div class="panel-body">
+
+                          <div class="form-group">
+                            <label for="">Select Managed Datasource</label>
+                            <select class="form-control" name="">
+                              <option value="">Select a Datasource</option>
+                              <option value="">Metal</option>
+                              <option value="">Alloy Composition</option>
+                              <option value="">Alloys</option>
+                            </select>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="wizard-controls text-center">
+                    <button type="button" class="btn btn-default prev-step">Previous</button>
+                    <button type="button" class="btn btn-primary next-step">Next</button>
+                  </div>
+
+                </div>
+
+                <div class="tab-pane" role="tabpanel" id="step4">
+
+                  <div class="step4">
+                    <div class="">
+
+                      <div class="create-sheet-text text-center">
+                        <h2>Select Columns to for your Worksheet</h2>
+                        <span>Select some columns to start your Worksheet. You can add more and manage columns next in the Worksheet builder.</span>
+
+                        <div class="table-heading">
+                          <h4>Alloy Composition</h4>
+                        </div>
+
+                      </div>
+
+
+
+                      <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th>
+                                  <div class="wizard-checkbox">
+                                    <label>
+                                      <input type="checkbox" name="" value="">
+                                      <span></span>
+                                    </label>
+                                  </div>
+                                </th>
+                                <th>Column Header Name</th>
+                                <th>Preview Information</th>
+                                <th width="120">Column Type</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <div class="wizard-checkbox">
+                                    <label>
+                                      <input type="checkbox" name="" value="">
+                                      <span></span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>Alloy</td>
+                                <td>CU-TIN-MIX</td>
+                                <td><span class="badge badge-warning">Reference</span></td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="wizard-checkbox">
+                                    <label>
+                                      <input type="checkbox" name="" value="">
+                                      <span></span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>Alloy Subtotal</td>
+                                <td>0.80</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="wizard-checkbox">
+                                    <label>
+                                      <input type="checkbox" name="" value="">
+                                      <span></span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>Multiplier</td>
+                                <td>0.6126</td>
+                                <td><span class="badge badge-success">Calculated</span></td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="wizard-checkbox">
+                                    <label>
+                                      <input type="checkbox" name="" value="">
+                                      <span></span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>Adder</td>
+                                <td>0.0035</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="wizard-checkbox">
+                                    <label>
+                                      <input type="checkbox" name="" value="">
+                                      <span></span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>Alloy Subtotal</td>
+                                <td>0.6126</td>
+                                <td><span class="badge badge-success">Calculated</span></td>
+                              </tr>
+                            </tbody>
+                        </table>
+                      </div>
+
+                      <div class="table-responsive">
+                        <table class="table table-full">
+                            <thead>
+                              <tr>
+                                <th>
+                                  <div class="wizard-checkbox">
+                                    <label>
+                                      <input type="checkbox" name="" value="">
+                                      <span></span>
+                                    </label>
+                                  </div>
+                                </th>
+                                <th>Column from File</th>
+                                <th>Preview Info from File</th>
+                                <th width="250">Column from Worksheet</th>
+                                <th>Preview Info from Worksheet</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <div class="wizard-checkbox">
+                                    <label>
+                                      <input type="checkbox" name="" value="">
+                                      <span></span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>Metals</td>
+                                <td>17-4_Metal</td>
+                                <td>
+                                  <div class="column-dropdown">
+                                    <span class="red">Choose a column to match</span>
+                                    <div class="dropdown ">
+                                      <button class="btn btn-default" type="button" id="dropdownMenuButton" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+                                        <img src="./images/down.svg" alt="">
+                                      </button>
+                                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Metal</a>
+                                        <a class="dropdown-item" href="#">Frequency</a>
+                                        <a class="dropdown-item" href="#">Mill Source</a>
+                                        <a class="dropdown-item" href="#">Index Value</a>
+                                      </div>
+                                  </div>
+
+                                  </div>
+                                </td>
+                                <td>--</td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="wizard-checkbox">
+                                    <label>
+                                      <input type="checkbox" name="" value="">
+                                      <span></span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>Index</td>
+                                <td>0.4700</td>
+                                <td>
+                                  <div class="column-dropdown">
+                                    <span class="red">Choose a column to match</span>
+                                    <div class="dropdown ">
+                                      <button class="btn btn-default" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="./images/down.svg" alt="">
+                                      </button>
+                                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Metal</a>
+                                        <a class="dropdown-item" href="#">Frequency</a>
+                                        <a class="dropdown-item" href="#">Mill Source</a>
+                                        <a class="dropdown-item" href="#">Index Value</a>
+                                      </div>
+                                  </div>
+
+                                  </div>
+                                </td>
+                                <td>--</td>
+                              </tr>
+
+
+
+                            </tbody>
+                        </table>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="wizard-controls text-center">
+                    <button type="button" class="btn btn-default prev-step">Previous</button>
+                    <button type="button" class="btn btn-primary next-step ">Next</button>
+                  </div>
+
+                </div>
+
+
+                <div class="tab-pane" role="tabpanel" id="step5">
+
+                  <div class="step4">
+                    <div class="">
+
+                      <div class="create-sheet-text text-center">
+                        <h2>Choose a file to Upload</h2>
+                      </div>
+
+
+                      <div class="upload-box">
+                        <div class="uploaded-check-icon hide">
+                          <img src="./images/approval.svg" alt="">
+                        </div>
+                        <div class="upload-icon">
+                          <img src="./images/icon-uploa.png" alt="">
+                        </div>
+                        <div class="upload-text">
+                          <div class="file-name hide">
+                            [file-name].xls
+                          </div>
+                          <div class="file-size hide">
+                              138KB
+                          </div>
+                          <span class="">
+                            Drag and drop or
+                            <a href="#"> choose a file </a>
+                            to upload your data. All .csv, .xlsx, and .xls files types are supported.
+                          </span>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+
+                  <div class="wizard-controls text-center">
+                    <button type="button" class="btn btn-default prev-step">Back</button>
+                    <button type="button" class="btn btn-primary btn-info-full ">Next</button>
+                  </div>
+
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </form>
+
+        <div class="wizard-inner">
+            <div class="connecting-line"></div>
+            <ul class="nav nav-tabs" role="tablist">
+
+                <li role="presentation" class="active">
+                    <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+                        <span class="round-tab">
+
+                        </span>
+                    </a>
+                </li>
+
+                <li role="presentation" class="disabled">
+                    <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+                        <span class="round-tab">
+
+                        </span>
+                    </a>
+                </li>
+                <li role="presentation" class="disabled">
+                    <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+                        <span class="round-tab">
+
+                        </span>
+                    </a>
+                </li>
+                <li role="presentation" class="disabled">
+                    <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab" title="Step 4">
+                        <span class="round-tab">
+
+                        </span>
+                    </a>
+                </li>
+                <li role="presentation" class="disabled">
+                    <a href="#step5" data-toggle="tab" aria-controls="step5" role="tab" title="Step 5">
+                        <span class="round-tab">
+
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+    <!-- jQuery Version 1.11.1 -->
+
+    <script src="js/jquery.js"></script>
+    <script src="./js/wizard.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap-select.min.js"></script>
+    <script type="text/javascript">
+      $('.modal-close').click(function() {
+          $('.wizard .tab-content .tab-pane').removeClass('active');
+          $('.wizard .tab-content .tab-pane:first-child').addClass('active');
+          $('.wizard-inner .nav-tabs li').removeClass('active');
+          $('.wizard-inner .nav-tabs li:first-child').addClass('active');
+      });
+    </script>
+
+    <script type="text/javascript">
+      $('.right-control-bottom .btn').click(function() {
+        $(this).addClass('Text')
+      })
+    </script>
+
+    <script type="text/javascript">
+    $('.table-responsive').on('show.bs.dropdown', function () {
+   $('.table-responsive').css( "overflow", "inherit" );
+});
+
+$('.table-responsive').on('hide.bs.dropdown', function () {
+   $('.table-responsive').css( "overflow", "auto" );
+})
+    </script>
+
+</body>
+
+</html>

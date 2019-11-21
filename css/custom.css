@@ -1113,3 +1113,49 @@ text-decoration: none;
 .column-dropdown .red{
   color: #c23934;
 }
+
+/*##############----Datasource css start-----##############*/
+.datasource-container{
+  max-width: 800px;
+    color: #3e3e3c;
+}
+.datasource-container label .datasource-item{
+min-height: 265px;
+border: 1px solid #ff4612;
+border-radius: 8px;
+padding: 15px;
+padding-bottom: 38px;
+position: relative;
+cursor: pointer;
+}
+.datasource-container label input[type="radio"]:checked + .datasource-item {
+    background-color: rgba(255, 70, 18, 0.05);
+}
+.datasource-container label .datasource-item::after{
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #00a19b;
+  border-radius: 50%;
+  top: 15px;
+  right: 15px;
+}
+.datasource-container label input[type="radio"]:checked + .datasource-item::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 161, 155, 0.5);
+    border-radius: 50%;
+    top: 20px;
+    right: 20px;
+}
+.datasource-container label .datasource-item h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.datasource-container label .datasource-item span {
+    font-size: 13px;
+    font-weight: 400;
+}
